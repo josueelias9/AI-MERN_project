@@ -73,7 +73,7 @@ import React from 'react'
 ```javascript
 ReactDOM.render(<Game />, document.getElementById("root"));
 ```
-2. en ejemplo, copiamos todo el js y lo ponemos en el lugar donde estaba la funcion que eliminamos en el paso 1
+2. Del ejemplo, copiamos todo el js y lo ponemos en el lugar donde estaba la funcion que eliminamos en el paso 1
 
 
 HTML
