@@ -63,16 +63,32 @@ CSS
 1. el CSS del ejemplo lo agregamos en App.css o en index.css. No borramos nada
 
 JS 
-1. del proyecto eliminar la funcion App que esta dentro de App.js
-2. cambiamos el nombre "Game" por "App"
-2. copiamos todo el js del ejemplo y lo ponemos en el lugar donde estaba la funcion que eliminamos en el paso 1
+1. en App.js dentro de proyecto, eliminar la funcion App que esta dentro de App.js
+2. en App.js dentro de proyecto, agregar lo siguiente en la cabecera:
+```javascript
+import React from 'react'
+```
+3. Del ejemplo, cambiamos el nombre "Game" por "App"
+3. Del ejemplo, eliminamos lo siguiente:
+```javascript
+ReactDOM.render(<Game />, document.getElementById("root"));
+```
+2. en ejemplo, copiamos todo el js y lo ponemos en el lugar donde estaba la funcion que eliminamos en el paso 1
+
 
 HTML
-1. borrramos 
+1. En index.html, borrramos 
 ```html
 <div id="root"></div>
 ```
-2. Copiamos todo el html del ejemplo y reemplazamos el siguiente codigo en el lugar del codigo que borramos en el paso 1
+2. Del ejemplo, copiamos todo el html del ejemplo y reemplazamos el siguiente codigo en el lugar del codigo que borramos en el paso 1
+
+finalmente ejecutar 
+```bash 
+npm start
+```
+para levantar el servidor. Fin :D
+
 
 ### ___mas info___ 
 veo que en el caso de los componentes, siempre estos llaman a la funcion render. Encontre esta info
