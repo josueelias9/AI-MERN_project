@@ -97,23 +97,33 @@ otra cosa que aprendi es sobre las funciones flechas. muy buena explicacion en l
 https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 
 # __tutorial base (no oficial)__
-usamos el siguiente tutorial como para hacer nuestro proyecto
+Usamos el siguiente tutorial como para hacer nuestro proyecto
 https://www.youtube.com/watch?v=7qyjYeF0074
 
-## __preparando entorno__
-seguir los siguientes paso spara que el proyecto funcione
 
 ## __estructura del proyecto__
+Estructura de nuestro repositorio _proyecto_ (asumimos que este proyecto sera levantado en un repositorio propio)
+
 ```
-|-- proyecto (mi repositorio. Contiene gitnore y README.md)
+|-- proyecto 
+    |-- README.md
+    |-- gitgnore
     |-- mernweb (creado con npx)
         |-- public
         |-- src
     |-- server (creado manualmente)
 ```
+Estructura del repositorio _MERN-Website-master_ descargado
+```
+|-- Descargas
+    |-- MERN-Website-master
+        |-- Fine Art
+            |-- src
+            |-- server 
+```
 ## __pasos__
-### ___en carpeta descargas___
-1. descargar repo
+### ___en carpeta Descargas___
+1. descargar repositorio
 
 https://github.com/Muhammad-Feroz/MERN-Website
 
@@ -123,10 +133,10 @@ Dentro de carpeta proyecto hacer lo siguiente:
 ```bash
 npx create-react-app mernweb
 ```
-### ___en carpeta descargas - client___
-copiar carpetas public y src y reemplazar las que estan dentro de proyecto - mernweb.
+### ___en carpeta Fine Art - client___
+1. copiar carpetas _public_ y _src_ y reemplazar las que estan dentro de proyecto - mernweb.
 
-ir _package.json_ y copiar las lineas donde dice _/* ESTO */_
+2. ir _package.json_ y copiar las lineas donde dice _/* ESTO */_
 ```json
 {
   "name": "mernweb",
@@ -146,39 +156,38 @@ ir _package.json_ y copiar las lineas donde dice _/* ESTO */_
     "web-vitals": "^1.1.2"
   },
 ```
-copiarlas y ponerlas en las json de proyecto - mernweb.
-### ___en carpeta proyecto - mernweb___
-```bash
-npm install
-npm start
-```
+3. pegar segun corresponda en el _package.json_ de proyecto - mernweb.
 ### ___en carpeta proyecto___
+Crear carpeta para el server e iniciar _package.json_
 ```bash
 mkdir server
 cd server
 npm init -y
 ```
-### ___en carpeta descargas - server___
-1. abir json y copiar dependencias. Pegarlas en las dependencias de proyecto - server.
+### ___en carpeta Fine Art - server___
+1. abir _package.json_ y copiar todas las dependencias. Pegarlas en las dependencias de proyecto - server. Tambien copiar _nodemon app.js_
 ```json
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "cookie-parser": "^1.4.5",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.0.12",
-    "nodemon": "^2.0.14"
-  }
-```
-2. del json, copiar _nodemon app.js_ y pegarlo en el json de proyecto - server
-```json
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "nodemon app.js" /* ¡AGREGAR SOLO ESTA LINEA!*/
+    "dev" : "nodemon app.js" /* ESTO */
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": { /* ESTO */
+    "bcryptjs": "^2.4.3", /* ESTO */
+    "cookie-parser": "^1.4.5", /* ESTO */
+    "dotenv": "^10.0.0", /* ESTO */
+    "express": "^4.17.1", /* ESTO */
+    "jsonwebtoken": "^8.5.1", /* ESTO */
+    "mongoose": "^6.0.12", /* ESTO */
+    "nodemon": "^2.0.14" /* ESTO */
+  } /* ESTO */
+}
 ```
-3. en descargas - server, copiar todos los archivos exepto _package.json_ y _package-lock.json_. Pegarlos en proyecto - server.
+
+2. en Fine Art - server, copiar todos los archivos exepto _package.json_ y _package-lock.json_. Pegarlos en proyecto - server.
 ### ___en carpeta proyecto - server___
 crear archivo config.env y poner lo siguiente:
 ```
@@ -193,10 +202,25 @@ mongodb+srv://User:_<password>@cluster0.waw8k.mongodb.net/myFirstDatabase?retryW
 <password> = CaXbZogKvsriloIC
 myFirstDatabase = fineart
 ```
-finalmente ejecutar 
+### ___en carpeta proyecto___
+instalar dependencias para el cliente y servidor: 
 ```
+cd (ruta al proyecto)/proyecto/mernweb
 npm install
+cd ..
+cd server
+npm install
+```
+finalemente, correr el cliente y el servidor en diferentes terminales:
+
+ejecutando cliente
+```bash
+cd (ruta al proyecto)/proyecto/mernweb
+npm start
+```
+ejecutando servidor
+```bash
+cd (ruta al proyecto)/proyecto/server
 npm run dev
 ```
-
-
+para ver que funciona, vaya _Atlas Mongodb_ e ingrese con la cuenta google.
