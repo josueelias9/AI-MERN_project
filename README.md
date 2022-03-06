@@ -63,7 +63,7 @@ para crear este proyecto nos apoyaremos de dos cosas:
 - documentacion oficial
 
 a continuacion algunos proyectos referencia
-## __tutorial para que el ejemplo oficial funcione__
+## __ejemplo REACT (oficial)__
 
 primero crear proyecto react con
 ```bash
@@ -231,7 +231,7 @@ npm run dev
 ```
 para ver que funciona, vaya _Atlas Mongodb_ e ingrese con la cuenta google.
 
-## __TensorFlow__
+## __TensorFlow (oficial)__
 <!--
 - https://www.tensorflow.org/
 - Aprende
