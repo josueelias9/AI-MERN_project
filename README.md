@@ -1,6 +1,6 @@
 
 # __título 1__
-## __título 2__ 
+## __título 2__
 ### __título 3__
 #### __título 4__
 ---
@@ -32,7 +32,7 @@ fuente: https://platzi.com/blog/que-es-mern-stack-javascript/?gclid=Cj0KCQiA64GR
 ## __2022-03-03__
 
 
-### ___instalando react proyecto___ 
+### ___instalando react proyecto___
 - ir a https://es.reactjs.org/
 - ir a "Documentacion"
 - "INSTALACION"
@@ -47,7 +47,7 @@ fuente: https://platzi.com/blog/que-es-mern-stack-javascript/?gclid=Cj0KCQiA64GR
 https://www.w3schools.com/tags/ref_eventattributes.asp
 - se entendio sobre DOM. Avance importante.
 
-### ___mas info___ 
+### ___mas info___
 veo que en el caso de los componentes, siempre estos llaman a la funcion render. Encontre esta info
 > when context gets changed render gets called
 
@@ -75,7 +75,7 @@ el ejemplo viene con tres codigos: JS, html y CSS:
 CSS
 1. el CSS del ejemplo lo agregamos en App.css o en index.css. No borramos nada
 
-JS 
+JS
 1. en App.js dentro de proyecto, eliminar la funcion App que esta dentro de App.js
 2. en App.js dentro de proyecto, agregar lo siguiente en la cabecera:
 ```javascript
@@ -90,14 +90,14 @@ ReactDOM.render(<Game />, document.getElementById("root"));
 
 
 HTML
-1. En index.html, borrramos 
+1. En index.html, borrramos
 ```html
 <div id="root"></div>
 ```
 2. Del ejemplo, copiamos todo el html del ejemplo y reemplazamos el siguiente codigo en el lugar del codigo que borramos en el paso 1
 
-finalmente ejecutar 
-```bash 
+finalmente ejecutar
+```bash
 npm start
 ```
 para levantar el servidor. Fin :D
@@ -111,7 +111,7 @@ https://www.youtube.com/watch?v=7qyjYeF0074
 Estructura de nuestro repositorio _proyecto_ (asumimos que este proyecto sera levantado en un repositorio propio)
 
 ```
-|-- proyecto 
+|-- proyecto
     |-- README.md
     |-- gitgnore
     |-- mernweb (creado con npx)
@@ -125,7 +125,7 @@ Estructura del repositorio _MERN-Website-master_ descargado
     |-- MERN-Website-master
         |-- Fine Art
             |-- src
-            |-- server 
+            |-- server
 ```
 ### __pasos__
 #### __en carpeta Descargas__
@@ -209,7 +209,7 @@ mongodb+srv://User:_<password>@cluster0.waw8k.mongodb.net/myFirstDatabase?retryW
 myFirstDatabase = fineart
 ```
 #### __en carpeta proyecto__
-instalar dependencias para el cliente y servidor: 
+instalar dependencias para el cliente y servidor:
 ```
 cd (ruta al proyecto)/proyecto/mernweb
 npm install
@@ -244,12 +244,12 @@ Este es el tercer proyecto referencia. A continuacion los pasos para poder ejecu
 - ir a la [pagina](https://www.tensorflow.org/) oficial de TensorFlow
 - Dar click en "Aprende"
 - Dar click en "Para JavaScript"
-- Dar click en "ver modelos"
+- Dar click en "Ver los modelos"
 - Dar click en "Clasificacion de Imagenes" (se puede escoger cualquiera)
 - Me redirige a GitHub. Dar click a "tjfs-models"
 - clonar repositorio.
 - descomprimir.
-- escogemos el modelo. Para este caso damos click a "Coco SSD". 
+- escogemos el modelo. Para este caso damos click a "Coco SSD".
 - navegar hasta de demo
 ```bash
 cd (ruta de descarga)/tjfs-models-master/coco-ssd/demo
@@ -260,5 +260,12 @@ npm install
 npm run build-deps
 npm run watch
 ```
-- Se abrira un terminal. Listo. Estudiarlo y usarlo como referencia. 
+- Se abrira un terminal. Listo. Estudiarlo y usarlo como referencia.
 - Happy hacking!
+
+## __REACT +TensorFlow (no oficial)__
+https://www.youtube.com/watch?v=uTdUUpfA83s
+
+## __REACT +TensorFlow 2 (no oficial)__
+https://www.youtube.com/watch?v=S_Lg1bVbqY4
+
