@@ -1,7 +1,8 @@
 
 # __título 1__
 ## __título 2__ 
-### ___título 3___
+### __título 3__
+#### __título 4__
 ---
 ---
 ---
@@ -46,7 +47,23 @@ fuente: https://platzi.com/blog/que-es-mern-stack-javascript/?gclid=Cj0KCQiA64GR
 https://www.w3schools.com/tags/ref_eventattributes.asp
 - se entendio sobre DOM. Avance importante.
 
-### ___tutorial para que el ejemplo oficial funcione___
+### ___mas info___ 
+veo que en el caso de los componentes, siempre estos llaman a la funcion render. Encontre esta info
+> when context gets changed render gets called
+
+aqui
+https://stackoverflow.com/questions/50563434/when-does-the-render-method-in-react-get-called
+
+otra cosa que aprendi es sobre las funciones flechas. muy buena explicacion en la guia oficial
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
+# __proyectos referencia__
+para crear este proyecto nos apoyaremos de dos cosas:
+- proyectos referencia
+- documentacion oficial
+
+a continuacion algunos proyectos referencia
+## __tutorial para que el ejemplo oficial funcione__
 
 primero crear proyecto react con
 ```bash
@@ -85,23 +102,12 @@ npm start
 ```
 para levantar el servidor. Fin :D
 
-
-### ___mas info___ 
-veo que en el caso de los componentes, siempre estos llaman a la funcion render. Encontre esta info
-> when context gets changed render gets called
-
-aqui
-https://stackoverflow.com/questions/50563434/when-does-the-render-method-in-react-get-called
-
-otra cosa que aprendi es sobre las funciones flechas. muy buena explicacion en la guia oficial
-https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions
-
-# __tutorial base (no oficial)__
+## __tutorial base (no oficial)__
 Usamos el siguiente tutorial como para hacer nuestro proyecto
 https://www.youtube.com/watch?v=7qyjYeF0074
 
 
-## __estructura del proyecto__
+### __estructura del proyecto__
 Estructura de nuestro repositorio _proyecto_ (asumimos que este proyecto sera levantado en un repositorio propio)
 
 ```
@@ -121,19 +127,19 @@ Estructura del repositorio _MERN-Website-master_ descargado
             |-- src
             |-- server 
 ```
-## __pasos__
-### ___en carpeta Descargas___
+### __pasos__
+#### __en carpeta Descargas__
 1. descargar repositorio
 
 https://github.com/Muhammad-Feroz/MERN-Website
 
 2. descomprimir
-### ___en carpeta proyecto___
+#### ___en carpeta proyecto___
 Dentro de carpeta proyecto hacer lo siguiente:
 ```bash
 npx create-react-app mernweb
 ```
-### ___en carpeta Fine Art - client___
+#### __en carpeta Fine Art - client__
 1. copiar carpetas _public_ y _src_ y reemplazar las que estan dentro de proyecto - mernweb.
 
 2. ir _package.json_ y copiar las lineas donde dice _/* ESTO */_
@@ -157,14 +163,14 @@ npx create-react-app mernweb
   },
 ```
 3. pegar segun corresponda en el _package.json_ de proyecto - mernweb.
-### ___en carpeta proyecto___
+#### __en carpeta proyecto__
 Crear carpeta para el server e iniciar _package.json_
 ```bash
 mkdir server
 cd server
 npm init -y
 ```
-### ___en carpeta Fine Art - server___
+#### __en carpeta Fine Art - server__
 1. abir _package.json_ y copiar todas las dependencias. Pegarlas en las dependencias de proyecto - server. Tambien copiar _nodemon app.js_
 ```json
 
@@ -188,7 +194,7 @@ npm init -y
 ```
 
 2. en Fine Art - server, copiar todos los archivos exepto _package.json_ y _package-lock.json_. Pegarlos en proyecto - server.
-### ___en carpeta proyecto - server___
+#### __en carpeta proyecto - server__
 crear archivo config.env y poner lo siguiente:
 ```
 PORT = 3001
@@ -202,7 +208,7 @@ mongodb+srv://User:_<password>@cluster0.waw8k.mongodb.net/myFirstDatabase?retryW
 <password> = CaXbZogKvsriloIC
 myFirstDatabase = fineart
 ```
-### ___en carpeta proyecto___
+#### __en carpeta proyecto__
 instalar dependencias para el cliente y servidor: 
 ```
 cd (ruta al proyecto)/proyecto/mernweb
@@ -224,3 +230,35 @@ cd (ruta al proyecto)/proyecto/server
 npm run dev
 ```
 para ver que funciona, vaya _Atlas Mongodb_ e ingrese con la cuenta google.
+
+## __TensorFlow__
+<!--
+- https://www.tensorflow.org/
+- Aprende
+- Para JavaScript
+- Instructivos
+- Reconocimiento de dígitos escritos a mano con CNN
+-->
+Este es el tercer proyecto referencia. A continuacion los pasos para poder ejecutar los modelos. Teener en cuenta que esta opcion ejecuta modelos ya entrenados. La idea es usar estos modelos en produccion. El entrenamiento queda de lado.
+
+- ir a la [pagina](https://www.tensorflow.org/) oficial de TensorFlow
+- Dar click en "Aprende"
+- Dar click en "Para JavaScript"
+- Dar click en "ver modelos"
+- Dar click en "Clasificacion de Imagenes" (se puede escoger cualquiera)
+- Me redirige a GitHub. Dar click a "tjfs-models"
+- clonar repositorio.
+- descomprimir.
+- escogemos el modelo. Para este caso damos click a "Coco SSD". 
+- navegar hasta de demo
+```bash
+cd (ruta de descarga)/tjfs-models-master/coco-ssd/demo
+```
+- ejecutar los siguientes comandos (tener en cuenta que el _README_ de tensorflow recomiendo usar _yarm_ pero tuvo problemas con ello, asi que vi la forma de seguir usando _npm_ y funciono)
+```basj
+npm install
+npm run build-deps
+npm run watch
+```
+- Se abrira un terminal. Listo. Estudiarlo y usarlo como referencia. 
+- Happy hacking!
