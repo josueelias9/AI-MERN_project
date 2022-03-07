@@ -269,3 +269,17 @@ https://www.youtube.com/watch?v=uTdUUpfA83s
 ## __REACT +TensorFlow 2 (no oficial)__
 https://www.youtube.com/watch?v=S_Lg1bVbqY4
 
+# __tipo de dato__
+
+dato a analizar | funcion para hacer analisis | resultado | interpretacion 
+| - | - | - | - 
+ 1 | typeof(1) | number | number: es numero
+ "texto" | typeof("texto") | string | string: es texto
+ [1,2,3] | Array.isArray([1,2,3]) | True | verdadero o falso si es array o no
+ document.getElementById("resultado") | document.getElementById("resultado") instanceof Element | True
+
+ # __refencias oficiales:__ 
+- [Express](https://expressjs.com/)
+- [Postman](https://www.postman.com/)
+- [React](https://reactjs.org/)
+- [node.js](https://nodejs.org/en/)
